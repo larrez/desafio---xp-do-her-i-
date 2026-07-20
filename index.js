@@ -1,6 +1,12 @@
 let heroi = "tulio";
 
-let xp = 2900;
+let saldoPartidas = tierHeroi(277, 102);
+function tierHeroi(numA, numB){
+    let saldoVitorias = numA - numB;
+    return saldoVitorias;
+}
+let xp = saldoPartidas * 50;
+console.log(`o heroi tem um saldo de ${saldoPartidas} vitorias e acumulou um total de ${xp} pontos de experiencia`)
 
 if (xp < 1000){
     console.log("O herói " + heroi + " está no tier de ferro.");
